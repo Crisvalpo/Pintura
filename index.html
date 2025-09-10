@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colores y Pintura Industrial - LukeAPP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <nav class="main-nav">
+                <button id="btnRalColors" class="nav-btn active">Colores RAL</button>
+                <button id="btnPaintSchemes" class="nav-btn">Esquemas de Pintura</button>
+                <button id="btnVideos" class="nav-btn">Media 🔗</button>
+            </nav>
+            <div id="header-content">
+                <h1>Colores RAL</h1>
+                <p>Fluidos de Cañerías Industriales</p>
+            </div>
+        </header>
+
+        <div class="content-section active" id="ral-colors-section">
+            <div class="colors-list" id="colorsList">
+                </div>
+        </div>
+
+        <div class="content-section" id="paint-schemes-section">
+            <div class="schemes-list" id="schemesList">
+                </div>
+        </div>
+        
+        <div class="content-section" id="video-section">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/_EVVldfNIts?si=oy_e_Zhi09F3p_X4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div class="audio-container">
+                <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2167843659&color=%23b4a494&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+                    <a href="https://soundcloud.com/cristian-luke-138632890" title="Cristian Luke" target="_blank" style="color: #cccccc; text-decoration: none;">Cristian Luke</a> · 
+                    <a href="https://soundcloud.com/cristian-luke-138632890/aconcagua-el-blindaje-de-pintura-anticorrosion" title="Aconcagua El Blindaje de Pintura Anticorrosión" target="_blank" style="color: #cccccc; text-decoration: none;">Aconcagua El Blindaje de Pintura Anticorrosión</a>
+                </div>
+            </div>
+
+            <div class="video-description">
+                <h3>TECHNICAL QUERY PIP-076</h3>
+                <p>A continuación, se detallan las instrucciones y su comparación con la especificación original del proyecto "K484-0000-0000-JSD-2300-01 Job Design Specifications for Painting".</p>
+                
+                <h4>Eliminación de Bandas de Color y Flechas de Dirección de Flujo:</h4>
+                <p><strong>Instrucción Actual:</strong> No se debe aplicar ninguna banda o anillo de color diferente al color base de la tubería para su identificación. Tampoco se deben pintar flechas para indicar la dirección del flujo a lo largo de las tuberías.</p>
+                <p><strong>Comparación con la Especificación Original:</strong> Esta es una modificación directa a la especificación del proyecto, la cual originalmente requería la aplicación de bandas de color espaciadas para la identificación del fluido en las tuberías y flechas para indicar la dirección del flujo, de acuerdo con la norma NCh19.</p>
+
+                <h4>Color de Tuberías:</h4>
+                <p><strong>Instrucción Actual:</strong> Las tuberías deben ser pintadas en su totalidad con un único color base correspondiente al servicio, según la tabla de colores RAL actualizada proporcionada en la comunicación técnica. Este color se aplicará como capa de acabado del sistema de pintura.</p>
+                <p><strong>Comparación con la Especificación Original:</strong> La especificación original detallaba en la sección 11 una tabla de colores para tuberías. La nueva instrucción actualiza y, en algunos casos, modifica dichos colores RAL para estandarizar y facilitar la ejecución.</p>
+
+                <h4>Identificación de Líneas en Límite de Batería:</h4>
+                <p><strong>Instrucción Actual:</strong> La única identificación de la línea por servicio se realizará exclusivamente en los límites de batería. Esta señalización deberá estar escrita en español, en lugares accesibles y legibles para los operadores de la planta.</p>
+                <p><strong>Comparación con la Especificación Original:</strong> La especificación original establecía un sistema de identificación más extendido a lo largo de las tuberías, incluyendo leyendas cerca de válvulas, flanches y cambios de dirección. La nueva directriz simplifica esto, limitando la identificación detallada solo a los puntos de límite de batería. La especificación ya contemplaba el uso de leyendas escritas como indicación primaria del contenido.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="colorModal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <div class="modal-color" id="modalColor"></div>
+            <p id="modalRalCode"></p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
